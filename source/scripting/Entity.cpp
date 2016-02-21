@@ -312,6 +312,10 @@ namespace GTA
 	{
 		Native::Function::Call(Native::Hash::SET_ENTITY_COORDS_NO_OFFSET, Handle, value.X, value.Y, value.Z, 1, 1, 1);
 	}
+	void Entity::MotionBlur::set(bool value)
+	{
+		Native::Function::Call(Native::Hash::SET_ENTITY_MOTION_BLUR, Handle, value);
+	}
 	Math::Quaternion Entity::Quaternion::get()
 	{
 		float x, y, z, w;

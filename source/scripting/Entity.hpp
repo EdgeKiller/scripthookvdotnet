@@ -173,6 +173,10 @@ namespace GTA
 		{
 			void set(Math::Vector3 value);
 		}
+		property bool MotionBlur
+		{
+			void set(bool value);
+		}
 		property Math::Quaternion Quaternion
 		{
 			Math::Quaternion get();
